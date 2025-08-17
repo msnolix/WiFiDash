@@ -1,0 +1,11 @@
+# Ignore captured handshake files
+captures/*
+
+# Ignore logs
+logs/*
+
+# Ignore temporary files
+tmp/*
+*.cap
+*.csv
+*.log
