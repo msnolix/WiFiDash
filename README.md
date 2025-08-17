@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/misc/logo.png" alt="WiFiDash Logo">
+  <img src=".github/wifidash.png" alt="WiFiDash Logo">
 </p>
  
 <p align="center">
