@@ -1,4 +1,23 @@
-# WiFiDash
+<p align="center">
+  <img src=".github/misc/logo.png" alt="WiFiDash Logo">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-1.0.0-green?style=for-the-badge">
+  <img src="https://img.shields.io/github/license/msnolix/WiFiDash?style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/msnolix/WiFiDash?style=for-the-badge">
+  <img src="https://img.shields.io/github/issues/msnolix/WiFiDash?color=red&style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/msnolix/WiFiDash?color=teal&style=for-the-badge">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Author-msnolix-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/Open%20Source-Yes-darkgreen?style=flat-square">
+  <img src="https://img.shields.io/badge/Maintained%3F-Yes-lightblue?style=flat-square">
+  <img src="https://img.shields.io/badge/Written%20In-Python-darkcyan?style=flat-square">
+  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmsnolix%2FWiFiDash&title=Visitors&edge_flat=false"/>
+</p>
+
 
 A **fully-featured professional terminal Wi-Fi dashboard** for monitoring and testing your own networks.
 
