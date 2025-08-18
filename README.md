@@ -25,15 +25,15 @@ A **fully-featured professional terminal Wi-Fi dashboard** for monitoring and te
 
 ## Table of Contents
 
-1. Features  
-2. Requirements  
-3. Installation  
-4. Usage  
-5. Manual Monitor Mode  
-6. Configuration  
-7. Directory Structure  
-8. Contributing  
-9. License  
+1. [Features](#features)  
+2. [Requirements](#requirements)  
+3. [Installation](#installation)  
+4. [Usage](#usage)  
+5. [Manual Monitor Mode](#manual-monitor-mode-optional-⚡)  
+6. [Configuration](#configuration)  
+7. [Directory Structure](#directory-structure)  
+8. [Contributing](#contributing)  
+9. [License](#license)  
 
 ---
 
