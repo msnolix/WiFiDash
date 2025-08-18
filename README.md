@@ -17,40 +17,44 @@
   <img src="https://img.shields.io/badge/Written%20In-Bash-darkcyan?style=flat-square">
 </p>
 
-
 A **fully-featured professional terminal Wi-Fi dashboard** for monitoring and testing your own networks.
 
 ⚠️ **Important:** Only test networks you own. Unauthorized access is illegal.
 
+---
+
 ## Table of Contents
 
-1. Features
-2. Requirements
-3. Installation
-4. Usage
-5. Configuration
-6. Directory Structure
-7. Contributing
-8. License
+1. Features  
+2. Requirements  
+3. Installation  
+4. Usage  
+5. Manual Monitor Mode  
+6. Configuration  
+7. Directory Structure  
+8. Contributing  
+9. License  
 
 ---
 
 ## Features
 
-- Detect nearby Wi-Fi networks and display signal strength, channel, ESSID.
-- Automatically select the strongest network for monitoring.
-- Capture WPA/WPA2 handshakes automatically.
-- Brute-force handshakes with a custom wordlist.
-- Real-time dashboard showing capture and brute-force progress.
-- Logs all activity for review.
-- Written entirely in bash, easy to read and modify.
+- Detect nearby Wi-Fi networks and display signal strength, channel, ESSID.  
+- Automatically select the strongest network for monitoring.  
+- Capture WPA/WPA2 handshakes automatically.  
+- Brute-force handshakes with a custom wordlist.  
+- Real-time dashboard showing capture and brute-force progress.  
+- Logs all activity for review.  
+- Written entirely in bash, easy to read and modify.  
+
+---
 
 ## Requirements
 
-- Linux OS (Kali, Ubuntu recommended)
-- Root privileges
-- aircrack-ng suite
-- Wi-Fi adapter with monitor mode support
+- Linux OS (Kali, Ubuntu recommended)  
+- Root privileges  
+- aircrack-ng suite  
+- Wi-Fi adapter with monitor mode support  
 
 Install dependencies:
 
@@ -58,6 +62,8 @@ Install dependencies:
 sudo apt update
 sudo apt install aircrack-ng
 ```
+
+---
 
 ## Installation
 
@@ -74,6 +80,8 @@ cd WiFiDash
 chmod +x wifi_dash.sh
 ```
 
+---
+
 ## Usage
 
 Run the script:
@@ -84,11 +92,42 @@ sudo ./wifi_dash.sh
 
 Follow prompts to select adapter, scan networks, capture handshakes, and brute-force with wordlist.
 
+---
+
+## Manual Monitor Mode (Optional) ⚡
+
+If you want to enable monitor mode manually, you can use **one of the following methods**:
+
+> **Method 1: Using `ifconfig` and `airmon-ng`**
+>
+> ```bash
+> ifconfig wlan0 down
+> airmon-ng check kill
+> ifconfig wlan0 mode monitor
+> ifconfig wlan0 up
+> iwconfig
+> ```
+
+> **Method 2: Using `airmon-ng start`**
+>
+> ```bash
+> ifconfig wlan0 down
+> airmon-ng check kill
+> airmon-ng start wlan0
+> iwconfig
+> ```
+
+> ⚠️ **Note:** Replace `wlan0` with your Wi-Fi adapter name if different. Only use on networks you own. Unauthorized access is illegal.
+
+---
+
 ## Configuration
 
-- Captures folder: captures/ – stores .cap files
-- Logs folder: logs/ – stores aircrack logs
-- Temp scans: tmp/ – stores temporary CSV files
+- **captures/** – stores `.cap` files  
+- **logs/** – stores aircrack logs  
+- **tmp/** – stores temporary CSV files  
+
+---
 
 ## Directory Structure
 
@@ -102,9 +141,13 @@ WiFiDash/
 └── README.md
 ```
 
+---
+
 ## Contributing
 
 Contributions are welcome! Fork the repository, create a branch, commit, push, and submit a PR.
+
+---
 
 ## License
 
